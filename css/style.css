@@ -1,12 +1,99 @@
 body {
-  font-family: 'PT Serif', serif; }
+  font-family: 'PT Serif', serif;
+  font-size: 16px;
+  line-height: 1.6; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0; }
+
+h1 {
+  font-size: 3rem; }
+
+h2 {
+  font-size: 2rem; }
+
+h3 {
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: 700;
+  color: #39474e; }
+
+h4 {
+  color: white;
+  font-size: 5rem; }
+
+h5 {
+  text-transform: uppercase; }
+
+h6 {
+  color: white;
+  font-size: 1.5rem; }
 
 img {
   width: 100%; }
+
+button {
+  background-color: #6fbbb7;
+  margin-top: 10px;
+  border: none; }
+  button p {
+    color: white;
+    font-size: 1.25rem;
+    text-transform: none; }
+
+form {
+  background-color: #D5D5D5; }
 
 .clearfix::after {
   content: "";
   display: block;
   clear: both; }
+
+section:nth-child(1) {
+  background-color: #39474e; }
+
+section:nth-child(3) {
+  background-color: #D5D5D5;
+  border: 1px solid lightgray; }
+
+ul {
+  display: inline-block;
+  margin-bottom: 0; }
+  ul li {
+    display: inline-block;
+    margin: 5px; }
+    ul li a {
+      text-decoration: none;
+      color: white; }
+
+.navLeft {
+  float: left;
+  margin-left: 0; }
+  .navLeft li {
+    position: relative;
+    bottom: 10px; }
+    .navLeft li a {
+      font-size: 1.5rem; }
+    .navLeft li img {
+      position: relative;
+      top: 16px; }
+
+.navRight {
+  float: right;
+  margin-right: 0; }
+  .navRight li a {
+    font-size: 1rem; }
+
+section:nth-child(2) {
+  background-image: url("../images/home-hero.jpg");
+  background-size: cover;
+  height: 500px; }
+
+.heroText {
+  padding-top: 250px; }
+
+.courseInfo {
+  padding: 25px 5px; }
 
 /*# sourceMappingURL=style.css.map */
