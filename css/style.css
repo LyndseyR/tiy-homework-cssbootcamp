@@ -1,0 +1,12 @@
+body {
+  font-family: 'PT Serif', serif; }
+
+img {
+  width: 100%; }
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both; }
+
+/*# sourceMappingURL=style.css.map */
