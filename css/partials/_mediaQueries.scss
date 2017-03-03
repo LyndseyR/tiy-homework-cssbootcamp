@@ -1,0 +1,99 @@
+/////////////////////////////////
+/////// MEDIA QUERIES //////////
+///////////////////////////////
+
+@media screen and (max-width: 767px) {
+
+  h3 {
+    font-size: 2.5rem;
+  }
+
+  h4 {
+    font-size: 3rem;
+  }
+
+  /////// Navigation /////////////
+  section:nth-child(1) {
+    text-align: center;
+  }
+
+  ul {
+    display: inline-block;
+
+    li {
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+
+  .navLeft{
+    float: none;
+
+    li {
+      position: relative;
+      bottom: 10px;
+
+      a {
+        font-size: 1.3rem;
+      }
+
+      img {
+        position: relative;
+        top: 16px;
+      }
+    }
+  }
+
+  .navRight{
+    float: none;
+    margin-right: 0;
+
+    li {
+
+      a {
+        font-size: 1rem;
+      }
+    }
+  }
+  ///////////////////////////////
+
+  ////Hero Picture /////////////
+  section:nth-child(2) {
+    height: 300px;
+  }
+  .heroText {
+    padding-top: 100px;
+  }
+  ///////////////////////////////
+
+  .newsline {
+    display: none;
+  }
+
+  .courseOffered {
+    .container {
+      padding: 25px 0;
+    }
+    img {
+      width: 25%;
+    }
+  }
+
+  .employers {
+    .container {
+      padding: 25px;
+
+      img {
+        max-width: 40%;
+      }
+
+      button {
+        height: 60px;
+        width: 100%;
+      }
+    }
+  }
+}

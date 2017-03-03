@@ -1,0 +1,42 @@
+
+// Button Style //////////////////
+button {
+  background-color: $secondary-color;
+  margin-top: 10px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: none;
+  border-bottom: 2px solid #4fa8a3;
+  line-height: normal;
+
+  p {
+    color: white;
+    font-size: 1.5rem;
+    text-transform: none;
+    margin: 0;
+  }
+}
+
+button:hover {
+  background-color: #4fa8a3;
+  border-bottom: 2px solid transparent;
+}
+
+//////////////////////////////////
+
+.heroText {
+  button {
+    height: 50px;
+    p {
+      display: inline;
+      position: relative;
+      bottom:5px;
+    }
+    .fa-play-circle-o {
+      font-size: 3.5rem;
+      padding-right: 7px;
+      color: white;
+    }
+
+  }
+}

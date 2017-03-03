@@ -1,3 +1,95 @@
+ul {
+  display: inline-block;
+  margin-bottom: 0; }
+  ul li {
+    display: inline-block;
+    margin: 5px; }
+    ul li a {
+      text-decoration: none;
+      color: white; }
+    ul li a:hover {
+      color: #727d84; }
+
+.navLeft {
+  float: left;
+  margin-left: 0; }
+  .navLeft li {
+    position: relative;
+    bottom: 10px; }
+    .navLeft li a {
+      font-size: 1.5rem; }
+    .navLeft li a:hover {
+      padding-bottom: 5px;
+      border-bottom: 2px solid #6fbbb7; }
+    .navLeft li img {
+      position: relative;
+      top: 16px; }
+
+.navRight {
+  float: right;
+  margin-right: 0; }
+  .navRight li a {
+    font-size: 1.15rem; }
+  .navRight li a:hover {
+    text-decoration: underline; }
+
+form {
+  background-color: #D5D5D5;
+  border-radius: 10px; }
+  form .formWidth {
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px 0; }
+  form input {
+    border-radius: 10px; }
+  form p {
+    margin: 0; }
+  form p:nth-child(2) {
+    padding-bottom: 20px; }
+  form #fname, form #lname {
+    width: 48%;
+    margin-top: 15px; }
+  form #email, form #phone {
+    width: 100%; }
+  form button {
+    width: 100%; }
+
+.letsTalk form .formWidth {
+  width: 90%;
+  margin: 0 auto;
+  padding: 5px 0; }
+.letsTalk form input {
+  font-size: 1.25rem; }
+
+button {
+  background-color: #6fbbb7;
+  margin-top: 10px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: none;
+  border-bottom: 2px solid #4fa8a3;
+  line-height: normal; }
+  button p {
+    color: white;
+    font-size: 1.5rem;
+    text-transform: none;
+    margin: 0; }
+
+button:hover {
+  background-color: #4fa8a3;
+  border-bottom: 2px solid transparent; }
+
+.heroText button {
+  height: 50px; }
+  .heroText button p {
+    display: inline;
+    position: relative;
+    bottom: 5px; }
+  .heroText button .fa-play-circle-o {
+    font-size: 3.5rem;
+    padding-right: 7px;
+    color: white; }
+
 body {
   font-family: 'PT Serif', serif;
   font-size: 16px;
@@ -36,48 +128,6 @@ h6 {
 img {
   width: 100%; }
 
-button {
-  background-color: #6fbbb7;
-  margin-top: 10px;
-  border: none; }
-  button p {
-    color: white;
-    font-size: 1.5rem;
-    text-transform: none;
-    margin: 0; }
-
-button:hover {
-  background-color: #4fa8a3; }
-
-form {
-  background-color: #D5D5D5;
-  border-radius: 10px; }
-  form .formWidth {
-    width: 80%;
-    margin: 0 auto;
-    padding: 15px 0; }
-  form input {
-    border-radius: 10px; }
-  form p {
-    margin: 0; }
-  form #fname, form #lname {
-    width: 49%;
-    margin-top: 15px; }
-  form #email, form #phone {
-    width: 100%; }
-  form button {
-    width: 100%; }
-
-.letsTalk form .formWidth {
-  width: 90%;
-  margin: 0 auto;
-  padding: 5px 0; }
-.letsTalk form #fname, .letsTalk form #lname {
-  width: 48%;
-  margin-top: 15px; }
-.letsTalk form input {
-  font-size: 1.4rem; }
-
 .clearfix::after {
   content: "";
   display: block;
@@ -89,34 +139,6 @@ section:nth-child(1) {
 .newsline {
   background-color: #D5D5D5;
   border: 1px solid lightgray; }
-
-ul {
-  display: inline-block;
-  margin-bottom: 0; }
-  ul li {
-    display: inline-block;
-    margin: 5px; }
-    ul li a {
-      text-decoration: none;
-      color: white; }
-
-.navLeft {
-  float: left;
-  margin-left: 0; }
-  .navLeft li {
-    position: relative;
-    bottom: 10px; }
-    .navLeft li a {
-      font-size: 1.5rem; }
-    .navLeft li img {
-      position: relative;
-      top: 16px; }
-
-.navRight {
-  float: right;
-  margin-right: 0; }
-  .navRight li a {
-    font-size: 1rem; }
 
 section:nth-child(2) {
   background-image: url("../images/home-hero.jpg");
@@ -168,7 +190,8 @@ section:nth-child(2) {
     height: 100px;
     width: 100px;
     border-radius: 50%;
-    border: 2px solid orange; }
+    border: 2px solid orange;
+    margin-top: 25px; }
 
 .quoteName {
   color: #727d84;
@@ -213,7 +236,10 @@ footer {
   height: 50px;
   background-color: #39474e; }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 767px) {
+  h3 {
+    font-size: 2.5rem; }
+
   h4 {
     font-size: 3rem; }
 
@@ -255,6 +281,14 @@ footer {
   .courseOffered .container {
     padding: 25px 0; }
   .courseOffered img {
-    width: 25%; } }
+    width: 25%; }
+
+  .employers .container {
+    padding: 25px; }
+    .employers .container img {
+      max-width: 40%; }
+    .employers .container button {
+      height: 60px;
+      width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */

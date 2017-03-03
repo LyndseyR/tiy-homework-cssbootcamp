@@ -1,0 +1,62 @@
+/////////////////////////////////
+/////// Navigation /////////////
+///////////////////////////////
+
+ul {
+  display: inline-block;
+  margin-bottom: 0;
+
+  li {
+    display: inline-block;
+    margin: 5px;
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+
+    a:hover {
+      color: $font-grey;
+    }
+  }
+}
+
+.navLeft{
+  float: left;
+  margin-left: 0;
+
+  li {
+    position: relative;
+    bottom: 10px;
+
+    a {
+      font-size: 1.5rem;
+    }
+
+    a:hover {
+      padding-bottom: 5px;
+      border-bottom: 2px solid $secondary-color;
+    }
+
+    img {
+      position: relative;
+      top: 16px;
+    }
+  }
+}
+
+.navRight{
+  float: right;
+  margin-right: 0;
+
+  li {
+
+    a {
+      font-size: 1.15rem;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+}
