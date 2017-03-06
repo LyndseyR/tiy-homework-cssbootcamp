@@ -58,6 +58,22 @@
       }
     }
   }
+
+  footer {
+    li a {
+      color: $font-grey;
+    }
+    .footerRight {
+       text-align: left;
+       padding-top: 25px;
+     }
+     .columns:nth-child(-n+2) {
+       float: left;
+       width: 50%;
+       padding: 0 5px;
+       box-sizing: border-box;
+     }
+  }
   ///////////////////////////////
 
   ////Hero Picture /////////////
