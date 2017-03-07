@@ -13,10 +13,7 @@ ul {
     a {
       text-decoration: none;
       color: white;
-    }
-
-    a:hover {
-      color: $font-grey;
+      transition: all 1s ease-in;
     }
   }
 }
@@ -34,6 +31,7 @@ ul {
     }
 
     a:hover {
+     color: $font-grey;
       padding-bottom: 5px;
       border-bottom: 2px solid $secondary-color;
     }
@@ -41,6 +39,11 @@ ul {
     img {
       position: relative;
       top: 16px;
+      transition: border-bottom 1s, transform 1s, ease-in;
+    }
+    img:hover {
+      border-bottom:none;
+      transform: scale(1.1);
     }
   }
 }
@@ -64,6 +67,7 @@ ul {
 /////// Footer /////////////
 footer {
   padding: 25px 0;
+
   li {
     color: white;
     text-transform: uppercase;
@@ -84,6 +88,7 @@ footer {
     }
   }
 }
+
 footer .columns:nth-child(3) {
   a {
     color: white;
